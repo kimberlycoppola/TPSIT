@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<body>
+<form id="frm1" >
+grassi: <input type="text" name="Hbase" value="0"><br>
+valore di conversione proteine:<input type="text" name="Harrivo" value="0"><br>
+valore di conversione carboidrati:<input type="text" name="Hsomma" value="0"><br>
+
+</form>
+<style>
+   
+
+
+</style>
+<div id="miodiv">
+<ul>
+<li><button class="button" onclick="myFunction()" ondblclick="kcal()"        class="ul"> converti in kcal</button></li> 
+</ul>
+
+
+
+<p>grassi:</p>
+<p id="base"></p>
+<p>proteine:</p>
+<p id="arrivo"></p>
+
+<p id="somma"></p>
+
+grassi in ckal
+<p id="demo"></p>
+proteine in kcal
+<p id="demi"></p>
+<script>
+function myFunction() {
+
+var x = document.getElementById("frm1");
+
+var base=x.elements[0].value;  
+document.getElementById("base").innerHTML =base;
+
+var arrivo=x.elements[1].value;
+
+var somma=9;
+document.getElementById("arrivo").innerHTML =arrivo;
+
+document.getElementById("demo").innerHTML =Dislivello(base,arrivo);
+
+document.getElementById("demi").innerHTML =proteine(base,9);      
+ 
+}
+
+function Dislivello(numero1,numero2){
+return numero1*numero2;
+}
+function altezza(numero2,numero3){
+return numero2*numero3;
+}
+function proteine(numero1){
+return numero1*9;
+}
+
+</script>
+
+</body>
+</html>
