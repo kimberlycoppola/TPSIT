@@ -1,38 +1,24 @@
+
 <!DOCTYPE html>
 <html>
 <body>
 <form id="frm1" >
 grassi: <input type="text" name="Hbase" value="0"><br>
-Calorie:<input type="text" name="Harrivo" value="0"><br>
-Carboidrato:<input type="text" name="Hsomma" value="0"><br>
+carboidrati:<input type="text" name="Harrivo" value="0"><br>
 
 </form>
-<style>
- 
 
-</style>
 <div id="miodiv">
-<p>CALORIE E GRASSI:</p>
-<ul>
-<li><button class="button" onclick="myFunction()" class="ul"> converti in kcal</button></li> 
-</ul>
-
-<ul>
-<li><button class="button" onclick="ckal()" class="ul"> converti calorie</button></li> 
-</ul>
-
-
+     <ul>
+    <li><button class="button" onclick="myFunction()" class="ul"> converti in kcal</button></li> 
+    </ul>
 <p>grassi:</p>
 <p id="base"></p>
 <p>calorie:</p>
 <p id="arrivo"></p>
-<p>carboidrati:</p>
-<p id="somma"></p>
 
-grassi in kcal
+CONVERSIONE
 <p id="demo"></p>
-carboidrati in calorie
-<p id="demi"></p>
 <script>
 function myFunction() {
 
@@ -43,32 +29,16 @@ document.getElementById("base").innerHTML =base;
 
 var arrivo=x.elements[1].value;
 document.getElementById("arrivo").innerHTML =arrivo;
-
-document.getElementById("demo").innerHTML =Dislivello(base,arrivo);
- 
-}
-function ckal(){
-
-    
-var x = document.getElementById("frm1");
-
-var somma=x.elements[2].value;
-document.getElementById("somma").innerHTML =somma;
-
-var arrivo=x.elements[1].value;
-document.getElementById("arrivo").innerHTML =arrivo;
-
-document.getElementById("demi").innerHTML =altezza(somma,arrivo);
+  
+  document.getElementById("demo").innerHTML =Dislivello(base,arrivo);
 }
 
 function Dislivello(numero1,numero2){
 return numero1*numero2;
-}
-function altezza(numero2,numero3){
-return numero2*numero3;
 }
 
 </script>
 
 </body>
 </html>
+
