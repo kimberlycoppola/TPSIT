@@ -13,6 +13,8 @@
     <p id="out"></p>
     <p id="uot"></p>
     <p id="tou"></p>
+    <p id="posmax"></p>
+    <p id="posmin"></p>
 </body>
 
 <script>
@@ -35,28 +37,33 @@
 
     function massimo()
     {    
+        let posmax;
         for(let a=0; a<1000; a++)
         { 
         if(arraydatiCasuali[a]>max)
                 {
                    max=arraydatiCasuali[a];
-                    
+                   posmax= a;
                 }
                 document.getElementById("uot").innerHTML=max;
+              
         }
-        
+        document.getElementById("posmax").innerHTML+="il numero massimo si trova nella posizione: "+posmax;
     }
     function minimo()
     {
+        let posmin;
         for(let b=0; b<1000; b++)
         { 
         if(arraydatiCasuali[b]<min)
                 {
                    min=arraydatiCasuali[b];
-                    
+                   posmin=b; 
                 }
                 document.getElementById("tou").innerHTML=min;
+               
         }
+        document.getElementById("posmin").innerHTML+="il numero minimo si trova nella posizione: "+posmin;
     }
 </script>
 </html>
